@@ -1,0 +1,5 @@
+recursive-include	vlfeat		*.h
+recursive-include       vlfeat          *.th
+recursive-include       vlfeat          *.tc
+include     COPYING INSTALL README TODO MANIFEST.in
+global-exclude  *.pyc

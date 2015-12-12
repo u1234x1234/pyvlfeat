@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: pyvlfeat
+Version: 0.1.1a3
+Summary: Python interface to the VLFeat library
+Home-page: http://launchpad.net/pyvlfeat
+Author: Peter Le Bek
+Author-email: peter@hyperplex.net
+License: GPL
+Description: 
+        * Scale-Invariant Feature Transform (SIFT)
+        * Dense SIFT (DSIFT)
+        * Integer k-means (IKM)
+        * Hierarchical Integer k-means (HIKM)
+        * Maximally Stable Extremal Regions (MSER)
+        * Quick shift image segmentation
+        * http://vlfeat.org
+        
+        Dependencies:
+        
+        * Boost.Python (libboost-python-dev on Debian systems)
+        * NumPy
+        * Matplotlib
+        
+Platform: Unix
+Platform: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: C
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved
+Requires: numpy
+Requires: matplotlib

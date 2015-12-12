@@ -1,0 +1,15 @@
+pyvlfeat - A high-level Python wrapper around a subset of the VLFeat library
+------------------------------------------------------------------------------
+
+SIFT/DSIFT/IKM/HIKM/MSER: Mikael Rousson <mikael@polarrose.com>
+Quick shift image segmentation: Andreas Mueller <amueller@ais.uni-bonn.de>
+Packaging and general clean-up: Peter Le Bek <peter@hyperplex.net>
+
+Includes the following functions:
+ * SIFT: vl_sift, vl_dsift, vl_siftdescriptor
+ * MSER: vl_mser, vl_erfill, vl_ertr
+ * k-means: vl_ikmeans, vl_ikmeanspush, vl_ikmeanshist, vl_hikmeans, vl_hikmeanspush, vl_hikmeanshist
+ * IMOP: vl_imsmooth
+ * misc: vl_binsum
+ * plotop: vl_plotframe
+ * quickshift: vl_quickseg,vl_quickvis

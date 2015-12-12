@@ -1,0 +1,17 @@
+INSTALLATION INSTRUCTIONS FOR pyvlfeat
+------------------------------------------------------------------------------
+
+I have tested this on Debian Linux and Mac OS X systems, please let me know 
+if you have success on other platforms so I can list them as supported.
+
+-- Building the Module on a Unix System --
+
+The C++ wrappers require Boost.Python to be installed:
+
+  $ sudo apt-get install boost-python1.35-dev
+
+pyvlfeat uses distutils, so to build the library:
+
+  $ python setup.py build
+
+
