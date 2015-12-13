@@ -72,7 +72,7 @@ def vl_test_hikmeans():
 	pylab.figure()
 	gen = color_gen()
 	for k in range(K*K):
-		color = gen.next()
+		color = next(gen)
 		sel = pylab.find(A[-1, :] == k)
 		pylab.plot(data[0, sel], data[1, sel], '.', color=color)
 		sel = pylab.find(AT[-1, :] == k)
