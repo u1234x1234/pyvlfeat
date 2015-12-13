@@ -47,7 +47,7 @@ LibraryDirs = None
 Libraries = None
 BuildExtension = build_ext
 CompileArgs = ['-msse2', '-O2', '-fPIC', '-w']
-LinkArgs = ['-msse', '-shared', '-lboost_python-py35']
+LinkArgs = ['-msse', '-shared', '-lboost_python-py34']
 
 def mkExtension(name):
     modname = '_' + name.lower()
