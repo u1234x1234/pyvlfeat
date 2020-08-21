@@ -9,6 +9,7 @@ import sys, os
 from distutils.core import Extension, setup
 from distutils.errors import DistutilsFileError
 from distutils.command.build_ext import build_ext
+import numpy
 
 __version__ = '0.1.1a3'
 
@@ -42,12 +43,12 @@ vlfeat_dep = ['vlfeat/vl/aib.h', 'vlfeat/vl/generic.h',
               'vlfeat/quickshift/vl_quickshift.h', 'vlfeat/py_vlfeat.h'
               ]
 
-IncludeDirs = ['vlfeat/']
+IncludeDirs = ['vlfeat/', numpy.get_include()]
 LibraryDirs = None
 Libraries = None
 BuildExtension = build_ext
 CompileArgs = ['-msse2', '-O2', '-fPIC', '-w']
-LinkArgs = ['-msse', '-shared', '-lboost_python-py34']
+LinkArgs = ['-msse', '-shared', '-lboost_python3']
 
 def mkExtension(name):
     modname = '_' + name.lower()
